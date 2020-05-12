@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFarm</string>
+    <string name="title_activity_maps">MyFarm</string>
+    <string name="get_location">Start</string>
+    <string name="stop_location">Stop</string>
+    <string name="save_location">Save</string>
+    <string name="location_name">Location Name</string>
+    <string name="save">Save</string>
+    <string name="title_activity_view_form_maps">Map</string>
+</resources>
