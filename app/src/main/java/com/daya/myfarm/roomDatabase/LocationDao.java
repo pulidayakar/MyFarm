@@ -20,6 +20,9 @@ public interface LocationDao {
     @Delete
     void delete(LocationTask locationTask);
 
+    @Query("Delete from locationtask")
+    void deleteAll();
+
     @Query("Delete from locationtask where farmName = :locname")
     void deletebyName(String locname);
 }

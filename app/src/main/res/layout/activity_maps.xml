@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MapsActivity">
+
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -52,8 +53,8 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:id="@+id/btnView"
-                    android:text="View"/>
+                    android:id="@+id/deleteLast"
+                    android:text="Delete"/>
             </LinearLayout>
            <RelativeLayout
                android:layout_width="match_parent"
@@ -61,12 +62,17 @@
                android:visibility="gone"
                android:layout_margin="10dp"
                android:id="@+id/rlSave">
-               <EditText
+               <com.google.android.material.textfield.TextInputLayout
                    android:layout_width="match_parent"
-                   android:layout_height="50dp"
-                   android:id="@+id/etName"
-                   android:layout_toStartOf="@+id/llSave"
-                   android:hint="@string/location_name"/>
+                   android:layout_height="wrap_content"
+                   android:layout_toStartOf="@+id/llSave">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:hint="Location Name"
+                       android:textSize="12sp"
+                       android:id="@+id/etName"/>
+               </com.google.android.material.textfield.TextInputLayout>
                <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"

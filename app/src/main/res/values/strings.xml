@@ -7,4 +7,13 @@
     <string name="location_name">Location Name</string>
     <string name="save">Save</string>
     <string name="title_activity_view_form_maps">Map</string>
+    <string name="acres_n_s">Acres \n%s</string>
+    <string name="cents_n_s">Cents \n%s</string>
+    <string name="hectares_n_s">Hectares \n%s</string>
+    <string name="sq_ft_n_s">Sq.Ft \n%s</string>
+    <string name="view_all">View All</string>
+    <string name="delete_last_point">Delete Last Point</string>
+    <string name="sync_to_firebase">Sync To Firebase</string>
+    <string name="create_farm">Create Farm</string>
+    <string name="view_farm">View Farm</string>
 </resources>

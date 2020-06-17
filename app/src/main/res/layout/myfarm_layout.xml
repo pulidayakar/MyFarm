@@ -10,9 +10,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvName"
+            android:textStyle="bold"
+            android:padding="7dp"
             android:textColor="@color/colorBlack"
             android:layout_gravity="center"
             android:layout_margin="10dp"/>
-
     </androidx.cardview.widget.CardView>
 </layout>

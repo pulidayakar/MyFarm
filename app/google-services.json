@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "452293123457",
+    "firebase_url": "https://myfarm-d7877.firebaseio.com",
+    "project_id": "myfarm-d7877",
+    "storage_bucket": "myfarm-d7877.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452293123457:android:b462af27e8b948674f5c80",
+        "android_client_info": {
+          "package_name": "com.daya.myfarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452293123457-daakd35vj7r2f1brieccslpujcneqg6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBivmxA02_F-3gROKWklTGEiqunc_ZbBYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452293123457-daakd35vj7r2f1brieccslpujcneqg6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

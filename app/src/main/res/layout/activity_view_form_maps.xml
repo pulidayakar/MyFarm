@@ -1,15 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ViewFormMapsActivity">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbar">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/map"
+            android:layout_below="@+id/appbar"
+            android:layout_above="@id/llArea"
             android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llArea"
+            android:padding="10dp"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/acres_n_s"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:id="@+id/tvAcres"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/cents_n_s"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:id="@+id/tvCents"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/hectares_n_s"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/tvHectares"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/sq_ft_n_s"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:id="@+id/tvSqFt"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
     </RelativeLayout>
 </layout>
