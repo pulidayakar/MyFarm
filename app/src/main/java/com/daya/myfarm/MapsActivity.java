@@ -158,7 +158,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         PolylineOptions polyOptions = new PolylineOptions()
                 .width(8)
                 .jointType(JointType.ROUND)
-                .color(Color.RED)
+                .color(Color.WHITE)
                 .startCap(new RoundCap())
                 .endCap(new RoundCap())
                 .geodesic(true);
